@@ -56,14 +56,14 @@ export default defineType({
   ],
   preview: {
     select: {
+      title: 'title',
       provider: 'icon.provider',
-      name: 'title',
+      name: 'icon.name',
     },
-    prepare(icon) {
+    prepare(data) {
       return {
-        title: icon.provider,
-        subtitle: icon.name,
-        media: preview(icon),
+        title: data.title,
+        media: preview(data),
       }
     },
   },
