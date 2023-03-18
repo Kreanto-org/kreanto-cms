@@ -5,7 +5,7 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'white-ram',
+  title: 'Kreanto',
 
   projectId: '6wrn8bhl',
   dataset: 'production',
