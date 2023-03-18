@@ -57,7 +57,7 @@ export default defineType({
   preview: {
     select: {
       provider: 'icon.provider',
-      name: 'icon.name',
+      name: 'title',
     },
     prepare(icon) {
       return {
