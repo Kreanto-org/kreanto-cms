@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import {preview} from 'sanity-plugin-icon-picker'
 
 export default defineType({
   name: 'post',
@@ -17,6 +18,20 @@ export default defineType({
       options: {
         source: 'title',
         maxLength: 96,
+      },
+    }),
+    defineField({
+      name: 'index',
+      title: 'Index',
+      type: 'string',
+    }),
+    defineField({
+      title: 'Icon',
+      name: 'icon',
+      type: 'iconPicker',
+      options: {
+        providers: ['fa'],
+        outputFormat: 'react',
       },
     }),
     defineField({
@@ -39,16 +54,17 @@ export default defineType({
       type: 'blockContent',
     }),
   ],
-
   preview: {
     select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
+      provider: 'icon.provider',
+      name: 'icon.name',
     },
-    prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
+    prepare(icon) {
+      return {
+        title: icon.provider,
+        subtitle: icon.name,
+        media: preview(icon),
+      }
     },
   },
 })
