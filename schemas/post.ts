@@ -30,8 +30,7 @@ export default defineType({
       name: 'icon',
       type: 'iconPicker',
       options: {
-        providers: ['fa'],
-        outputFormat: 'react',
+        storeSvg: true,
       },
     }),
     defineField({
