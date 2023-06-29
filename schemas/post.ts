@@ -30,6 +30,7 @@ export default defineType({
       name: 'icon',
       type: 'iconPicker',
       options: {
+        outputFormat: 'react',
         storeSvg: true,
       },
     }),
@@ -58,6 +59,7 @@ export default defineType({
       title: 'title',
       provider: 'icon.provider',
       name: 'icon.name',
+      svg: 'icon.svg',
     },
     prepare(data) {
       return {

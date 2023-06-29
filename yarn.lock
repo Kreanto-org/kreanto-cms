@@ -5519,10 +5519,10 @@ sanity-diff-patch@^1.0.9:
   dependencies:
     diff-match-patch "^1.0.5"
 
-sanity-plugin-icon-picker@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/sanity-plugin-icon-picker/-/sanity-plugin-icon-picker-3.0.2.tgz#22a2f3efbb9404fb85f5e3334258bb530eafe761"
-  integrity sha512-NMFKBRuSpOjxa7lAlaEAkgU8whFNjlyG3uuO2qdJPAffWNWRny99OjvOw0i0+d1a9H7JYM1BjlMav8BTPyXLFw==
+sanity-plugin-icon-picker@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-icon-picker/-/sanity-plugin-icon-picker-3.2.1.tgz#3ab89ebd0e945ea7e6652981be8c31a90c8753ea"
+  integrity sha512-A1ktHWGfmfu8cI+N0QS2zSSyph1vEaDGZ6db/hRLRxuZWGS1i1e+pF7alJsIJzAEHqbxpp9WeSRn4O7LM9RY6g==
   dependencies:
     "@sanity/incompatible-plugin" "^1.0.4"
     decamelize "3.2.0"
